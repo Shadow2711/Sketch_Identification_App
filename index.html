@@ -17,29 +17,18 @@
     
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-<center>
-  <div id = "myModal" class = "modal fade">
-    <div class = "modal-content">
-      <div class = "modal-header">
-        <button type = "button" class = "close" data-dismiss = "modal">&times;</button>
-        <h4 class = "modal-title">Sketches</h4>
-      </div>
-      <div class = "modal-body">
-        <img src = "sketch1.png">
-        <img src = "sketch2.png">
-      </div>
-    </div>
-  </div>
-  <h1 style = "color: bisque; font-size: 50px;">Sketch Identification
-    <button id = "show_sketch" type = "button" class = "btn btn-success" data-toggle = "modal" data-target = "#myModal">Show sketch</button>
+  <center>
+  <h1>Quick Draw
+    <button class = "btn btn-warning" id = "showSketch" onclick = "show_sketch()">Show Sketch</button>
   </h1>
-  <p id = "label_sketch" style = "font-size: 35px;">Your Sketch :</p>
-  <p id = "cofidence" style = "font-size: 35px;">Confidence :</p>
+  <p style = "font-size: 20px;" id = "sketch">Your Sketch : </p>
+  <br>
+  <p style = "font-size: 20px;" id = "confidence">Confidence</p>
   <hr>
-  <button type = "button" class = "btn btn-danger btn-lg" onclick = "clearCanvas()">Clear</button>
-</center>
-
+  <p id = "sketch_hint">Sketch to be drawn : </p>
+  <span id = "score">Score : </span>
+  <span id = "timer">Timer : </span>
+  </center>
 <script src="main.js"></script>
 </body>
